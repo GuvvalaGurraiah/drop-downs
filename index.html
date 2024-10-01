@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            ul{
+                list-style: none;
+            }
+            nav{
+                background-color: blue;
+                padding: 10px 20px;
+                color: brown;
+            }
+            .main-menu{
+                display: flex;
+                list-style-type: none;
+            }
+            .menu-item,
+            .sub-menu-item{
+                position: relative;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+            .menu-item a {
+                text-decoration: none;
+                color: aqua;
+            }
+            .menu-item:hover,
+            .sub-menu-item:hover{
+                background-color: gold;
+            }
+            .dropdown{
+                display: none;
+                width: 200px;
+                background-color: brown;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 1;
+            }
+            .menu-item:hover .dropdown{
+                display: block;
+            }
+        </style>
+        </head>
+        <body>
+            <nav>
+                <ul class="main-menu">
+                    <li class="menu-item"><a href="#">Home</a></li>
+                    <li class="menu-item"><a href="#">Categories</a></li>
+                <ul class="drop-down">
+                    <li class="sub-menu-item">Boys</li>
+                    <li class="sub-menu-item">girls</li>
+                    <li class="sub-menu-item">others</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
